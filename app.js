@@ -34,6 +34,7 @@ const cors = require('cors');
 const router = require('./config/router');
 const blogRouter=require('./config/blogRouter')
 const textbookRouter=require('./config/textbookRouter')
+app.get("/",(req,res) => res.send("Welcome RenderAPI"));
 app.use('/uploads', express.static('uploads'));
 
 
